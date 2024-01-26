@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 101 - v.2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- For demo-purposes, all input fields are of the type text (default) in this example -->
+    <form id="contactForm" target="#">
+        <label for="name">Navn:</label><br>
+        <input id="name" name="name"> <span>*</span>
+        <span class="error" id="nameError"></span>
+        <br>
+        
+        <label for="phone">Telefon:</label><br>
+        <input id="phone" name="phone"> <span>*</span>
+        <span class="error" id="phoneError"></span>
+        <br>
+        
+        <label>E-post:</label><br>
+        <input id="email" name="email"> <span>*</span>
+        <span class="error" id="emailError"></span>
+        <br>
+    
+        <label>Vennligst gjenta E-post:</label><br>
+        <input id="email2" name="email2"> <span>*</span>
+        <span class="error" id="email2Error"></span>
+        <br>
+    
+        <label>Kommentar:</label> <span>*</span><br> 
+        <textarea name="comment"></textarea><br>
+        <span class="error" id="commentError"></span>
+        <br>
+
+        <input type="submit" value="Send inn!">
+    </form>    
+</body>
+</html>
